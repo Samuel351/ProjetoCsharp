@@ -1,4 +1,4 @@
-namespace ProjetoASPNetCore.Models
+namespace ProjetoASPNetCore.Models.ViewModels
 {
     public class ErrorViewModel
     {

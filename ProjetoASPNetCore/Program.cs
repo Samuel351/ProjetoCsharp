@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ProjetoASPNetCore.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ProjetoASPNetCoreContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProjetoASPNetCoreContext"), builder => builder.MigrationsAssembly("ProjetoASPNetCore")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
