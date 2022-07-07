@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoASPNetCore.Data;
 
@@ -11,9 +12,10 @@ using ProjetoASPNetCore.Data;
 namespace ProjetoASPNetCore.Migrations
 {
     [DbContext(typeof(ProjetoASPNetCoreContext))]
-    partial class ProjetoASPNetCoreContextModelSnapshot : ModelSnapshot
+    [Migration("20220707143642_OutraEntidades")]
+    partial class OutraEntidades
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
