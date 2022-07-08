@@ -13,6 +13,14 @@ namespace ProjetoASPNetCore.Models
         public SalesRecord()
         { }
 
+        public SalesRecord(DateTime date, double amount, SalesStatus status, Seller seller)
+        {
+            Date = date;
+            Amount = amount;
+            Status = status;
+            Seller = seller;
+        }
+
         public SalesRecord(int id, DateTime date, double amount, SalesStatus status, Seller seller)
         {
             Id = id;

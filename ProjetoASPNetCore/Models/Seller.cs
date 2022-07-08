@@ -16,6 +16,15 @@ namespace ProjetoASPNetCore.Models
         public Seller()
         { }
 
+        public Seller(string name, string email, DateTime birthDate, double baseSalary, Departament departament)
+        {
+            Name = name;
+            Email = email;
+            this.birthDate = birthDate;
+            this.baseSalary = baseSalary;
+            Departament = departament;
+        }
+
         public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Departament departament)
         {
             Id = id;
