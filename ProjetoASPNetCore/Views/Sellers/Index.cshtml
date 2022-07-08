@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ProjetoASPNetCore.Models.Seller>;
+
+@{
+    ViewData["Title"] = "Vendedores";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-striped table-hover table-bordered">
+    <thead> <!-- Cabeçalho da tabela-->
+        <tr> <!-- Linha do cabeçalho-->
+            <th> <!-- Coluna do cabeçalho-->
+                @Html.DisplayNameFor(model => model.Name);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.baseSalary);
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class = "table-info table-success"> <!-- Corpo da tabela -->
+        @foreach(var item in Model)
+        {
+            <tr class="table-dark">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email);
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.baseSalary);
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
+                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+
+</table>
