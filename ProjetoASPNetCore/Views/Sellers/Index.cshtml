@@ -4,8 +4,12 @@
     ViewData["Title"] = "Vendedores";
 }
 
+<br />
 <h2>@ViewData["Title"]</h2>
 
+<a asp-action="Create" class="btn btn-primary">Criar novo</a>
+<br />
+<br />
 <table class="table table-striped table-hover table-bordered">
     <thead> <!-- Cabeçalho da tabela-->
         <tr> <!-- Linha do cabeçalho-->
@@ -35,10 +39,9 @@
                     @Html.DisplayFor(modelItem => item.baseSalary);
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a>
-                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
-
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Detalhes</a>
+                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Deletar</a>
                 </td>
             </tr>
         }
