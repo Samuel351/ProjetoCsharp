@@ -14,6 +14,8 @@ builder.Services.AddScoped<SeedingService>();
 
 builder.Services.AddScoped<SellerService>();
 
+builder.Services.AddScoped<DepartamentService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,0 +1,48 @@
+﻿@model ProjetoASPNetCore.Models.Seller
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+<br />
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <hr />
+    <dl class="align-middle">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name);
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name);
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email);
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email);
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.birthDate);
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.birthDate);
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.baseSalary);
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.baseSalary);
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Departament);
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Departament.Name);
+        </dd>
+        <hr />
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-info">Retornar</a>
+</div>
