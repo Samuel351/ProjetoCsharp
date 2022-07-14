@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace ProjetoASPNetCore.Models
@@ -6,10 +7,23 @@ namespace ProjetoASPNetCore.Models
     public class Seller
     {
         public int Id { get; set; }
+
+        [Display(Name = "Nome")]
         public string Name { get; set; }
+
+        [Display(Name = "E-mail")]
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+
+        [Display(Name = "Data de nascimento")]
+        [DataType(DataType.Date)]
         public DateTime birthDate { get; set; }
+
+        [Display(Name = "Salário")]
+        [DisplayFormat(DataFormatString = "{0:F2}")]
         public double baseSalary { get; set; }
+
+        [Display(Name = "Departamento")]
         public Departament Departament { get; set; }
         public int DepartamentId { get; set; }
         public ICollection<SalesRecord> Sales { get; set; } = new List<SalesRecord>();

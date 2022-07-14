@@ -14,16 +14,16 @@
     <thead> <!-- Cabeçalho da tabela-->
         <tr> <!-- Linha do cabeçalho-->
             <th> <!-- Coluna do cabeçalho-->
-                @Html.DisplayNameFor(model => model.Name);
+                @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Email);
+                @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.baseSalary);
+               @Html.DisplayNameFor(model => model.baseSalary)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Departament);
+                @Html.DisplayNameFor(model => model.Departament)
             </th>
             <th></th>
         </tr>
@@ -33,16 +33,16 @@
         {
             <tr class="table-dark">
                 <td>
-                    @Html.DisplayFor(modelItem => item.Name);
+                    @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Email);
+                    @Html.DisplayFor(modelItem => item.Email)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.baseSalary);
+                    R$ @Html.DisplayFor(modelItem => item.baseSalary)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Departament.Name);
+                    @Html.DisplayFor(modelItem => item.Departament.Name)
                 </td>
                 <td>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info">Detalhes</a>

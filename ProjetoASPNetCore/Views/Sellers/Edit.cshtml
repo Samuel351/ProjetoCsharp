@@ -1,0 +1,49 @@
+﻿@model ProjetoASPNetCore.Models.ViewModels.SellerFormViewModel
+@{
+
+     ViewData["Title"] = "Editar";
+}
+
+<br />
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Vendedor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+  <form asp-action="Edit">
+      <input type="hidden" asp-for="Seller.Id" />
+      <br />
+        <div class="form-group">
+            <label asp-for="Seller.Name" class="control-label">Nome</label>
+            <input asp-for="Seller.Name" class="form-control"/>
+        </div>
+        <br />
+         <div class="form-group">
+            <label asp-for="Seller.Email" class="control-label">E-mail</label>
+            <input asp-for="Seller.Email" class="form-control"/>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="Seller.birthDate" class="control-label">Data de nascimento</label>
+            <input asp-for="Seller.birthDate" class="form-control"/>
+        </div>
+        <br />
+        <div class="form-group">
+            <label asp-for="Seller.baseSalary" class="control-label">Salário</label>
+            <input asp-for="Seller.baseSalary" class="form-control"/>
+        </div>
+         <br />
+         <div class="form-group">
+         <label asp-for="Seller.DepartamentId" class="control-label"></label>
+         <select asp-for="Seller.DepartamentId" asp-items="@(new SelectList(Model.Departaments,"Id","Name"))" class="form-control"></select>
+        </div>
+        <br />
+         <div class="form-group">
+            <input type="submit" value="Salvar" class="btn btn-primary"/>
+            <a asp-action="Index" class="btn btn-info">Voltar</a>
+        </div>
+</form>
+</div>
+</div>

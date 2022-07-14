@@ -1,6 +1,7 @@
 ﻿using ProjetoASPNetCore.Data;
 using ProjetoASPNetCore.Models;
 using Microsoft.EntityFrameworkCore;
+using ProjetoASPNetCore.Services.Exceptions;
 
 namespace ProjetoASPNetCore.Services
 {
@@ -35,6 +36,23 @@ namespace ProjetoASPNetCore.Services
         {
             _context.Add(obj);
             _context.SaveChanges();
+        }
+
+        public void Update(Seller obj)
+        {
+            if (!_context.Seller.Any(x => x.Id == obj.Id))
+            {
+                throw new NotFoundException("ID não encontrado!");
+            }
+            try
+            {
+                _context.Update(obj);
+                _context.SaveChanges();
+            }
+            catch(DbConcurrencyException ex)
+            {
+                throw new DbConcurrencyException(ex.Message);
+            }
         }
     }
 }
