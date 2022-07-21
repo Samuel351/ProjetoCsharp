@@ -17,21 +17,25 @@
         <div class="form-group">
             <label asp-for="Seller.Name" class="control-label">Nome</label>
             <input asp-for="Seller.Name" class="form-control"/>
+            <span asp-validation-for="Seller.Name" class="text-danger"></span>
         </div>
         <br />
          <div class="form-group">
             <label asp-for="Seller.Email" class="control-label">E-mail</label>
             <input asp-for="Seller.Email" class="form-control"/>
+            <span asp-validation-for="Seller.Email" class="text-danger"></span>
         </div>
         <br />
         <div class="form-group">
-            <label asp-for="Seller.birthDate" class="control-label">Data de nascimento</label>
-            <input asp-for="Seller.birthDate" class="form-control"/>
+            <label asp-for="Seller.BirthDate" class="control-label">Data de nascimento</label>
+            <input asp-for="Seller.BirthDate" class="form-control"/>
+            <span asp-validation-for="Seller.BirthDate" class="text-danger"></span>
         </div>
         <br />
         <div class="form-group">
-            <label asp-for="Seller.baseSalary" class="control-label">Salário</label>
-            <input asp-for="Seller.baseSalary" class="form-control"/>
+            <label asp-for="Seller.BaseSalary" class="control-label">Salário</label>
+            <input asp-for="Seller.BaseSalary" class="form-control"/>
+            <span asp-validation-for="Seller.BaseSalary" class="text-danger"></span>
         </div>
          <br />
          <div class="form-group">
@@ -41,7 +45,12 @@
         <br />
          <div class="form-group">
             <input type="submit" value="Adicionar" class="btn btn-primary"/>
+            <a class="btn btn-info" asp-action="Index">Voltar a lista</a>
         </div>
 </form>
 </div>
 </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

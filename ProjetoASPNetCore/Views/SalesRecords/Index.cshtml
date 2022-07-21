@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Registro de vendas";
+}
+
+<br />
+<h2>@ViewData["Title"]</h2>
+<br />
+
+<div class="row">
+    <div class="col-md-4">
+    <h3>Busca simples</h3>
+    <form asp-action="SimpleSearch">
+        <div class="form-group">
+        <label class="control-label">Data miníma</label>
+        <input type="date" class = "form-control">
+        </div>
+        <br />
+        <div class="form-group">
+        <label class="control-label d-inline">Data maxíma</label>
+        <input type="date" class = "form-control">
+        </div>
+        <br />
+        <div class="form-group">
+        <input type="submit" value="buscar" class ="btn btn-primary"/>
+        </div>
+    </form>
+    <br />
+    <br />
+    <h3>Busca agrupada</h3>
+    <form asp-action="GroupingSearch">
+        <div class="form-group">
+        <label class="control-label">Data miníma</label>
+        <input type="date" class = "form-control">
+        </div>
+        <br />
+        <div class="form-group">
+        <label class="control-label">Data maxíma</label>
+        <input type="date" class = "form-control">
+        </div>
+        <br />
+        <div class="form-group">
+        <input type="submit" value="buscar" class ="btn btn-primary"/>
+        </div>
+    </form>
+    </div>
+</div>
+
+

@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace ProjetoASPNetCore.Models
@@ -6,6 +7,8 @@ namespace ProjetoASPNetCore.Models
     public class Departament
     {
         public int Id { get; set; }
+
+        [Display(Name = "Nome")]
         public string Name { get; set; }
         public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
 

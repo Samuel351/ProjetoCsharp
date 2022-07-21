@@ -17,6 +17,8 @@ builder.Services.AddScoped<SellerService>();
 
 builder.Services.AddScoped<DepartamentService>();
 
+builder.Services.AddScoped<SalesRecordService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

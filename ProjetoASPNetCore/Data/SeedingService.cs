@@ -39,65 +39,65 @@ namespace ProjetoASPNetCore.Data
 
             Seller s6 = new Seller("João Roxo", "joao@gmail.com", new DateTime(1997, 3, 4), 3000.0, d2);
 
-            SalesRecord r1 = new SalesRecord(new DateTime(2018, 09, 25), 11000.0, SalesStatus.Billed, s1);
+            SalesRecord r1 = new SalesRecord(new DateTime(2018, 09, 25), 11000.0, SalesStatus.Paga, s1);
 
-            SalesRecord r2 = new SalesRecord(new DateTime(2018, 09, 4), 7000.0, SalesStatus.Billed, s5);
+            SalesRecord r2 = new SalesRecord(new DateTime(2018, 09, 4), 7000.0, SalesStatus.Paga, s5);
 
-            SalesRecord r3 = new SalesRecord(new DateTime(2018, 09, 13), 4000.0, SalesStatus.Canceled, s4);
+            SalesRecord r3 = new SalesRecord(new DateTime(2018, 09, 13), 4000.0, SalesStatus.Cancelada, s4);
 
-            SalesRecord r4 = new SalesRecord(new DateTime(2018, 09, 1), 8000.0, SalesStatus.Billed, s1);
+            SalesRecord r4 = new SalesRecord(new DateTime(2018, 09, 1), 8000.0, SalesStatus.Paga, s1);
 
-            SalesRecord r5 = new SalesRecord(new DateTime(2018, 09, 21), 3000.0, SalesStatus.Billed, s3);
+            SalesRecord r5 = new SalesRecord(new DateTime(2018, 09, 21), 3000.0, SalesStatus.Paga, s3);
 
-            SalesRecord r6 = new SalesRecord(new DateTime(2018, 09, 15), 2000.0, SalesStatus.Billed, s1);
+            SalesRecord r6 = new SalesRecord(new DateTime(2018, 09, 15), 2000.0, SalesStatus.Paga, s1);
 
-            SalesRecord r7 = new SalesRecord(new DateTime(2018, 09, 28), 13000.0, SalesStatus.Billed, s2);
+            SalesRecord r7 = new SalesRecord(new DateTime(2018, 09, 28), 13000.0, SalesStatus.Paga, s2);
 
-            SalesRecord r8 = new SalesRecord(new DateTime(2018, 09, 11), 4000.0, SalesStatus.Billed, s4);
+            SalesRecord r8 = new SalesRecord(new DateTime(2018, 09, 11), 4000.0, SalesStatus.Paga, s4);
 
-            SalesRecord r9 = new SalesRecord(new DateTime(2018, 09, 14), 11000.0, SalesStatus.Pending, s6);
+            SalesRecord r9 = new SalesRecord(new DateTime(2018, 09, 14), 11000.0, SalesStatus.Pedente, s6);
 
-            SalesRecord r10 = new SalesRecord(new DateTime(2018, 09, 7), 9000.0, SalesStatus.Billed, s6);
+            SalesRecord r10 = new SalesRecord(new DateTime(2018, 09, 7), 9000.0, SalesStatus.Paga, s6);
 
-            SalesRecord r11 = new SalesRecord(new DateTime(2018, 09, 13), 6000.0, SalesStatus.Billed, s2);
+            SalesRecord r11 = new SalesRecord(new DateTime(2018, 09, 13), 6000.0, SalesStatus.Paga, s2);
 
-            SalesRecord r12 = new SalesRecord(new DateTime(2018, 09, 25), 7000.0, SalesStatus.Pending, s3);
+            SalesRecord r12 = new SalesRecord(new DateTime(2018, 09, 25), 7000.0, SalesStatus.Pedente, s3);
 
-            SalesRecord r13 = new SalesRecord(new DateTime(2018, 09, 29), 10000.0, SalesStatus.Billed, s4);
+            SalesRecord r13 = new SalesRecord(new DateTime(2018, 09, 29), 10000.0, SalesStatus.Paga, s4);
 
-            SalesRecord r14 = new SalesRecord(new DateTime(2018, 09, 4), 3000.0, SalesStatus.Billed, s5);
+            SalesRecord r14 = new SalesRecord(new DateTime(2018, 09, 4), 3000.0, SalesStatus.Paga, s5);
 
-            SalesRecord r15 = new SalesRecord(new DateTime(2018, 09, 12), 4000.0, SalesStatus.Billed, s1);
+            SalesRecord r15 = new SalesRecord(new DateTime(2018, 09, 12), 4000.0, SalesStatus.Paga, s1);
 
-            SalesRecord r16 = new SalesRecord(new DateTime(2018, 10, 5), 2000.0, SalesStatus.Billed, s4);
+            SalesRecord r16 = new SalesRecord(new DateTime(2018, 10, 5), 2000.0, SalesStatus.Paga, s4);
 
-            SalesRecord r17 = new SalesRecord(new DateTime(2018, 10, 1), 12000.0, SalesStatus.Billed, s1);
+            SalesRecord r17 = new SalesRecord(new DateTime(2018, 10, 1), 12000.0, SalesStatus.Paga, s1);
 
-            SalesRecord r18 = new SalesRecord(new DateTime(2018, 10, 24), 6000.0, SalesStatus.Billed, s3);
+            SalesRecord r18 = new SalesRecord(new DateTime(2018, 10, 24), 6000.0, SalesStatus.Paga, s3);
 
-            SalesRecord r19 = new SalesRecord(new DateTime(2018, 10, 22), 8000.0, SalesStatus.Billed, s5);
+            SalesRecord r19 = new SalesRecord(new DateTime(2018, 10, 22), 8000.0, SalesStatus.Paga, s5);
 
-            SalesRecord r20 = new SalesRecord(new DateTime(2018, 10, 15), 8000.0, SalesStatus.Billed, s6);
+            SalesRecord r20 = new SalesRecord(new DateTime(2018, 10, 15), 8000.0, SalesStatus.Paga, s6);
 
-            SalesRecord r21 = new SalesRecord(new DateTime(2018, 10, 17), 9000.0, SalesStatus.Billed, s2);
+            SalesRecord r21 = new SalesRecord(new DateTime(2018, 10, 17), 9000.0, SalesStatus.Paga, s2);
 
-            SalesRecord r22 = new SalesRecord(new DateTime(2018, 10, 24), 4000.0, SalesStatus.Billed, s4);
+            SalesRecord r22 = new SalesRecord(new DateTime(2018, 10, 24), 4000.0, SalesStatus.Paga, s4);
 
-            SalesRecord r23 = new SalesRecord(new DateTime(2018, 10, 19), 11000.0, SalesStatus.Canceled, s2);
+            SalesRecord r23 = new SalesRecord(new DateTime(2018, 10, 19), 11000.0, SalesStatus.Cancelada, s2);
 
-            SalesRecord r24 = new SalesRecord(new DateTime(2018, 10, 12), 8000.0, SalesStatus.Billed, s5);
+            SalesRecord r24 = new SalesRecord(new DateTime(2018, 10, 12), 8000.0, SalesStatus.Paga, s5);
 
-            SalesRecord r25 = new SalesRecord(new DateTime(2018, 10, 31), 7000.0, SalesStatus.Billed, s3);
+            SalesRecord r25 = new SalesRecord(new DateTime(2018, 10, 31), 7000.0, SalesStatus.Paga, s3);
 
-            SalesRecord r26 = new SalesRecord(new DateTime(2018, 10, 6), 5000.0, SalesStatus.Billed, s4);
+            SalesRecord r26 = new SalesRecord(new DateTime(2018, 10, 6), 5000.0, SalesStatus.Paga, s4);
 
-            SalesRecord r27 = new SalesRecord(new DateTime(2018, 10, 13), 9000.0, SalesStatus.Pending, s1);
+            SalesRecord r27 = new SalesRecord(new DateTime(2018, 10, 13), 9000.0, SalesStatus.Pedente, s1);
 
-            SalesRecord r28 = new SalesRecord(new DateTime(2018, 10, 7), 4000.0, SalesStatus.Billed, s3);
+            SalesRecord r28 = new SalesRecord(new DateTime(2018, 10, 7), 4000.0, SalesStatus.Paga, s3);
 
-            SalesRecord r29 = new SalesRecord(new DateTime(2018, 10, 23), 12000.0, SalesStatus.Billed, s5);
+            SalesRecord r29 = new SalesRecord(new DateTime(2018, 10, 23), 12000.0, SalesStatus.Pedente, s5);
 
-            SalesRecord r30 = new SalesRecord(new DateTime(2018, 10, 12), 5000.0, SalesStatus.Billed, s2);
+            SalesRecord r30 = new SalesRecord(new DateTime(2018, 10, 12), 5000.0, SalesStatus.Pedente, s2);
 
 
             _context.Departament.AddRange(d1, d2, d3, d4);
